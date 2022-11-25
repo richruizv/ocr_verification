@@ -131,7 +131,7 @@
             caso: 'real'
         };
         let faceCapture = new FaceCapture();
-        faceCapture.setToken('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InBsYXlidXNpbmVzcyIsInV1aWQiOiJjNzI3ZmM5Ny0yZjc2LTQ4NDctODMzZC05ZWFiM2YxODM0MzgiLCJuYW1lIjoicGxheWJ1c2luZXNzIiwiaXNfYWRtaW4iOmZhbHNlLCJwbHVzX2FjZXNzIjpmYWxzZSwiZXhwIjoxNjY5NDA3MTg0fQ.pMVzzQvhQJpzAfXIFjuht1chIkNN_DMiX9_y7G2A7VE');
+        faceCapture.setToken('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InBsYXlidXNpbmVzcyIsInV1aWQiOiJjNzI3ZmM5Ny0yZjc2LTQ4NDctODMzZC05ZWFiM2YxODM0MzgiLCJuYW1lIjoicGxheWJ1c2luZXNzIiwiaXNfYWRtaW4iOmZhbHNlLCJwbHVzX2FjZXNzIjpmYWxzZSwiZXhwIjoxNjY5NDEyNjYyfQ.3QywQyVGmQ9t0s9k5Z4NvEwf333sYf2npKXiXSyTkhI');
         faceCapture.init(config);
         faceCapture.load(() => {
             document.getElementById("version").innerHTML = " " + faceCapture.getVersion();
