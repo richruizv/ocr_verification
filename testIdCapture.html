@@ -127,11 +127,18 @@
         </div>
     </div>
     <script>
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+
+        let front_timeout = parseInt(params['front_timeout'] || '90000')
+        let back_timeout = parseInt(params['back_timeout'] || '90000')
+
+
         let config = {
             rootElement: 'micomponente',
             timeouts: {
-                front: 90000,
-                back: 90000
+                front: front_timeout,
+                back: back_timeout
             },
             captureMode: {
                 front: {

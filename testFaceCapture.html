@@ -118,9 +118,16 @@
         </div>
     </div>
     <script>
+        const urlSearchParams = new URLSearchParams(window.location.search);
+        const params = Object.fromEntries(urlSearchParams.entries());
+
+        let timeout = parseInt(params['timeout'] || '300000')
+
+
+
         let config = {
             rootElement: 'micomponente',
-            timeout: 300000,
+            timeout: timeout,
             caso: 'real'
         };
         let faceCapture = new FaceCapture();
